@@ -11,14 +11,14 @@ require './config/slack'
 set :wp_user, "pablaber" # The admin username
 set :wp_email, "pablaber225@gmail.com" # The admin email address
 set :wp_sitename, "Dummy Site" # The site title
-set :wp_localur, "http://localhost:1111" # Your local environment URL
+set :wp_localur, "http://localhost" # Your local environment URL
 
 ############################################
 # Setup project
 ############################################
 
 set :application, "wp-deploy"
-set :repo_url, "https://github.com/pablaber/wp-deploy"
+set :repo_url, "https://github.com:pablaber/wp-deploy"
 set :scm, :git
 
 set :git_strategy, SubmoduleStrategy
